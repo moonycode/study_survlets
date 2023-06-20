@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Out Form</title>
+</head>
+
+<body>
+  <div>
+    <span style="font-weight: bold;font-size: 15pt;">
+      Billing address
+    </span>
+  </div>
+  
+  <div>&nbsp;</div>
+
+  <div>
+    <form action="/checkoutResponseServlet" method="get">
+          <div>
+            <label for="firstname">First Name </label><input type="text" name="firstname" id="firstname">
+          </div>
+    
+          <div>
+            <label for="lastname">Last Name </label><input type="text" name="lastname" id="lastname">
+          </div>
+    
+          <div>&nbsp;<div>
+    
+              <div>
+                <div>
+                  <label for="username">User Name </label>
+                </div><input type="text" name="username" id="username" placeholder="Username">
+              </div>
+    
+              <div>&nbsp;<div>
+    
+                  <div>
+                    <label for="emailaddress">
+                      Email 
+                      <span style="color:gray">
+                        (Optional) 
+                      </span>
+                    </label>
+                    <input type="text" name="emailaddress" id="emailaddress" placeholder="you@example.com">
+                  </div>
+    
+                  <div>&nbsp;<div>
+    
+                      <div>
+                        <label for="address">Address </label><input type="text" name="address" id="address" placeholder="1234 Main St">
+                      </div>
+    
+                  <div>
+                    <label for="address2">
+                      Address 2 
+                      <span style="color:gray">
+                        (Optional) 
+                      </span>
+                    </label>
+                    <input type="text" name="address2" id="address2" placeholder="Apartment or suite">
+                  </div>
+
+              <div>&nbsp;<div>
+
+                      <div>
+                        <table>
+
+                          <tr>
+                            <td><label for="country">Country</label></td>
+                            <td><label for="state">State</label></td>
+                            <td><label for="zip">Zip</label></td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <select name="country" id="country">
+                                <option value="" selected>Choose...</option>
+                                <option value="korea">Korea</option>
+                                <option value="unitedstates">United States</option>
+                                <option value="canada">Canada</option>
+                                <option value="australia">Australia</option>
+                                <option value="japan">Japan</option>
+                              </select>
+                            </td>
+                            <td>
+                              <select name="state" id="state">
+                                <option value="" selected>Choose...</option>
+                                <option value="seoul">Seoul</option>
+                                <option value="california">California</option>
+                                <option value="calgary">Calgary</option>
+                                <option value="melbourne">Melbourne</option>
+                                <option value="tokyo">Tokyo</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="zip" id="zip">
+                            </td>
+                          </tr>
+
+                        </table>
+
+
+                      </div>
+                      <div><button type="submit">Submit</button></div>
+    </form>
+  </div>
+
+
+
+</body>
+
+</html>
