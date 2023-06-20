@@ -1,4 +1,4 @@
-package com.example.study_survlets;
+package com.example.study_survlets.controlls;
 
 import java.io.IOException;
 import java.io.PrintWriter;
